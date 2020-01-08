@@ -1,0 +1,15 @@
+.chat-side
+  .side-header
+    .side-header__box
+      .side-header__box__username aa
+      .side-header__box__menu
+        .side-header__box__menu__new-group
+          = link_to "#", class: "new-btn" do
+            = icon("fa","edit")
+        .side-header__box__menu__user-edit
+          = link_to "#", class: "cog-btn" do
+            = icon("fa","cog")
+  .groups
+    .group
+      .group__group-name aaaa
+      .group__last-message まだメッセージがありません
