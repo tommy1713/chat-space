@@ -1,0 +1,22 @@
+.chat-main
+  .main-header
+    .main-header__leftbox
+      .main-header__leftbox__current-group teamB
+      .main-header__leftbox__member-list member : aa
+    .main-header__edit-btn
+      = link_to '#', class: "e-btn" do
+        Edit
+  .messages
+    .message
+      .message__upper-info
+        .message__upper-info__username aa
+        .message__upper-info__date 2020/01/08(wed) 12:20:22
+      .message__text hello
+  .form
+    .new-message
+      .input-box
+        %input.input-box__text{:name => "message", :placeholder => "type a message", :type => "text"}/
+        %label{class: "input-box__image"}
+          = icon("fa","image")
+          %input{class: "input-box__image__file", type: "file"}
+      .submit-btn Send
